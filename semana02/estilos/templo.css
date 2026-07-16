@@ -61,3 +61,7 @@ section h2 {
 section ul {
     margin-left: 20px;
 }
+
+picture {
+    box-shadow: 0 0 25px rgba(1, 1, 1, 0.8)
+}
