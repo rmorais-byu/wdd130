@@ -49,7 +49,7 @@ article {
     padding: 8px;
 }
 
-.redes-sociais a {
+.socialmedia a {
     text-decoration: none;
 }
 
@@ -90,4 +90,8 @@ h1 {
 
 nav a {
     text-decoration: none;
+}
+
+.hero {
+    position: relative;
 }
