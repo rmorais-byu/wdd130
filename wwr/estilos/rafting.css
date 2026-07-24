@@ -79,3 +79,15 @@ h1 {
     float: right;
     width: 125px;
 }
+
+.hero article {
+    position: absolute;
+}
+
+.hero h1 {
+    position: absolute;
+}
+
+nav a {
+    text-decoration: none;
+}
