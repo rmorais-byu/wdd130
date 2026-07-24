@@ -11,15 +11,15 @@
     --fonte-body: Arial, Helvetica, sans-serif;
 }
 
-header {
-    background-color: var(--cor-primaria);
-    color: var(--cor-destaque2);
-}
-
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-destaque2);
 }
 
 body {
@@ -61,6 +61,7 @@ article {
     display: block;
     width: 100%;
     height: auto;
+    background-color: var(--cor-secundaria);
 }
 
 h1 {
