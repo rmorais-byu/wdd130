@@ -18,8 +18,11 @@
 }
 
 header {
-    background-color: var(--cor-primaria);
-    color: var(--cor-destaque2);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 40px 40px;
+    background-color: var(--cor-destaque2);
 }
 
 body {
@@ -55,12 +58,16 @@ article {
 
 .hero {
     position: relative;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
 }
 
 .hero img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 450px;
+    object-fit: cover;
     background-color: var(--cor-secundaria);
 }
 
@@ -77,16 +84,52 @@ h1 {
 }
 
 .hero article img {
-    float: right;
-    width: 125px;
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
 .hero article {
     position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .hero h1 {
     position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.hero article h2 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 1.3rem;
+}
+
+.hero article p {
+    font-size: 0.95rem;
+    margin-bottom: 0;
 }
 
 nav a {
@@ -95,4 +138,24 @@ nav a {
 
 .hero {
     position: relative;
+}
+
+nav {
+    display: flex;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--cor-destaque1);
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: var(--cor-primaria);
 }
