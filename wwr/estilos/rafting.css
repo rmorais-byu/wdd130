@@ -203,19 +203,19 @@ footer {
     margin-top: 40px;
 }
 
-.redes-sociais {
+.socialmedia {
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
-.redes-sociais a {
+.socialmedia a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
 }
 
-.redes-sociais img {
+.socialmedia img {
     width: 24px;
     height: 24px;
     object-fit: contain;
