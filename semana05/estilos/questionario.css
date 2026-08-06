@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    matrgin: 0;
+    margin: 0;
     padding: 0;
 }
 
@@ -8,26 +8,39 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    align-items: center;
+    padding: 20px;
 }
 
 header h1 {
     text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 main {
-    width: 600px;
+    width: 100%;
+    max-width: 500px;
 }
 
 form {
     display: grid;
-    gap: 5px;
-
+    gap: 8px;
+    background-color: #d5d5d5;
+    border: 1px solid#999999;
+    border-radius: 4px;
+    padding: 25px;
 }
 
 label {
-    margin-top: 15px;
-    border-radius: 5px;
+    margin-top: 12px;
+    font-weight: bold;
+    font-style: italic;
+    color: #000000;
+}
+
+label[for="q1"] {
+    margin-top: 0;
 }
 
 input,
@@ -35,10 +48,41 @@ textarea,
 select,
 button {
     padding: 5px 10px;
+    border: 1px solid#a6a6a6a6;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: inherit;
+    width: 100%S;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.codigo-box {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    border-radius: 3px;
+    margin: 4px 0;
 }
 
 button {
-    margin-top: 15px;
-    background-color: #3a3ab8;
-    color: #ffff
+    margin-top: 20px;
+    background-color: #3a3ab1;
+    color: #ffffff;
+    border: 1px solid#1a1a60;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2e3085;
 }
