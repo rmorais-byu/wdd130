@@ -55,16 +55,14 @@
                           required>
                     </div>
                     <div class="form-item row-item">
-                        <label>Propósito da Mensagem</label>
+                        <span>Propósito da Mensagem</span>
                         <div class="radio-group">
-                            <label><input type="radio" name="purpose" value="geral" checked> Dúvida
-                                Geral</label>
-                            <label><input type="radio" name="purpose" value="reserva">Pergunta sobre
-                                reserva</label>
-
-                            <label><input type="radio" name="purpose"
+                            <label for="duvida"><input type="radio" id="duvida" name="purpose"
+                                  value="geral" checked> Dúvida Geral</label>
+                            <label for="reserva"><input type="radio" id="reserva" name="purpose"
+                                  value="reserva">Pergunta sobre reserva</label>
+                            <label for="sugestao"><input type="radio" id="sugestao" name="purpose"
                                   value="sugestao">Sugestão</label>
-
                         </div>
                     </div>
                     <div class="form-item row-item">
@@ -73,8 +71,8 @@
                           required></textarea>
                     </div>
                     <div class="form-item checkbox-item">
-                        <label>
-                            <input type="checkbox" name="noticias" value="subscribe">
+                        <input type="checkbox" id="noticias" name="noticias" value="subscribe">
+                        <label for="noticias">
                             Por favor, me inscreva nas notícias mensais
                         </label>
                     </div>

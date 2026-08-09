@@ -292,6 +292,12 @@ footer {
     gap: 0.5rem;
 }
 
+.form-item.row-item > span,
+.form-item.row-item label {
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
 .form-item label {
     font-weight: bold;
     font-size: 0.9rem;
