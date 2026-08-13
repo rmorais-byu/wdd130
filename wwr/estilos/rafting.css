@@ -121,6 +121,116 @@ article {
     margin-bottom: 0;
 }
 
+.hero .hero_image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--cor-destaque7_translucido);
+    padding: 20px 30px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 650px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    color: var(--cor-destaque3);
+    font-size: 2rem;
+    margin-bottom: 10px;
+    position: static;
+    transform: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.hero-content p {
+    color: var(--cor-destaque3);
+    font-size: 1rem;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.btn-cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-destaque4);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.newsletter {
+    background-color: var(--cor-destaque2);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin: 30px 16px;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.newsletter-form .form-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.newsletter-form input,
+.btn-submit {
+    height: 38px;
+    font-size: 0.95rem;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-submit {
+    padding: 8px 20px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-destaque3);
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.grid-card {
+    border: 1px solid var(--cor-destaque2);
+    border-radius: 6px;
+    padding: 15px;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+.grid-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
 nav a {
     text-decoration: none;
 }
@@ -204,6 +314,14 @@ footer {
     margin-top: 40px;
 }
 
+footer .redes-sociais img {
+    width: 24px;
+    height: 24px;
+    max-width: 24px;
+    max-height: 24px;
+    object-fit: contain;
+}
+
 .redes-sociais {
     display: flex;
     gap: 20px;
@@ -233,8 +351,7 @@ footer {
 
 .empresa-topo {
     text-align: center;
-    margin: 1.5rem 0;
-    padding: 0;
+    margin: 20px 0;
 }
 
 .empresa-topo h1 {
@@ -404,4 +521,60 @@ footer {
     font-size: 0.9rem;
     font-weight: bold;
     color: #000;
+}
+
+.passeios-detalhes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.passeio-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid var(--cor-destaque2);
+    border-radius: 6px;
+    padding: 12px;
+    background-color: var(--cor-destaque3);
+}
+
+.passeio-card img {
+    width: 220px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.passeio-texto h2 {
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.tabela-secao {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.tabela-passeios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.tabela-passeios th,
+.tabela-passeios td {
+    border: 1px solid var(--cor-destaque1);
+    padding: 10px;
+    text-align: left;
+}
+
+.tabela-passeios th {
+    background-color: var(--cor-destaque2);
+    color: var(--cor-destaque1);
+    font-family: var(--fonte-titulo);
+}
+
+.tabela-passeios tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
